@@ -5,7 +5,7 @@
  *
  * Return: nothing
  */
-int _isalpha(void)
+int _isalpha(int c)
 {
 int ans = (c >= 'A' && c <= 'Z');
 return (ans);
