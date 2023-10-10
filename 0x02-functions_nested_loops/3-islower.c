@@ -7,10 +7,7 @@
  */
 int _islower(int c)
 {
-bool ans = (c >= 'a' && c <= 'z');
+int ans = (c >= 'a' && c <= 'z');
 
-if (ans)
-return (1);
-else
-return (0);
+return (ans);
 }
