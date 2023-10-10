@@ -8,7 +8,7 @@
 int printaphla10(void)
 {
 int x = 0;
-for (x < 10)
+while (x < 10)
 {
 int num = 'a';
 while (num <= 'z')
