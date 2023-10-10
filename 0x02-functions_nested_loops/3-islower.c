@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - blah blah
- * no parameters
+ * @c :the parameters
  *
  * Return: nothing
  */
