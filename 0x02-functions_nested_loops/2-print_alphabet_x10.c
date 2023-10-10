@@ -7,15 +7,17 @@
  */
 int printaphla10(void)
 {
-for (int x = 0; x < 10; x++)
+int x = 0;
+for (x < 10)
 {
 int num = 'a';
-while (num <= 'z' )
+while (num <= 'z')
 {
 _putchar(num);
 num++;
 }
 _putchar('\n');
+x++;
 }
 return (0);
 }
