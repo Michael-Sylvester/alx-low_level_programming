@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - blah blah
  * no parameters
@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-int num = 97;
-while (num < 123)
+int num = 'a';
+while (num <= 'z')
 {
-putchar(num);
+_putchar(num);
 num++;
 }
 putchar('\n');
