@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * printaphla10- blah blah
+ * print_alphabet_x10 - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int printaphla10(void)
+int print_alphabet_x10(void)
 {
 int x = 0;
 while (x < 10)
