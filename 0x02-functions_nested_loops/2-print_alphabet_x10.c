@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
- * main - blah blah
+ * printaphla10- blah blah
  * no parameters
  *
  * Return: nothing
  */
-int main(void)
+int printaphla10(void)
 {
 for (int x = 0; x < 10; x++)
 {
-int num = 97;
-while (num < 123)
+int num = 'a';
+while (num <= 'z' )
 {
-putchar(num);
+_putchar(num);
 num++;
 }
-putchar('\n');
+_putchar('\n');
 }
 return (0);
 }
