@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - blah blah
+ * function - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int main(void)
+int function(void)
 {
 
 return (0);

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * printaphla10- blah blah
  * no parameters

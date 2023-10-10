@@ -18,15 +18,15 @@ while IFS= read -r line; do
 
     # Create a new file with the corresponding name
         filename="${line}"
-	echo "#include <stdio.h>" > "$filename"
+	echo "#include \"main.h\"" > "$filename"
 	echo "/**" >> "$filename"
-	echo " * main - blah blah" >> "$filename"
+	echo " * function - blah blah" >> "$filename"
 	echo " * no parameters" >> "$filename"
 	echo " *" >> "$filename"
 	echo " * Return: nothing" >> "$filename"
 	echo " */" >> "$filename"
 
-	echo "int main(void)" >> "$filename"
+	echo "int function(void)" >> "$filename"
 	echo "{" >> "$filename"
 	echo "" >> "$filename"
 	echo "return (0);" >> "$filename"
