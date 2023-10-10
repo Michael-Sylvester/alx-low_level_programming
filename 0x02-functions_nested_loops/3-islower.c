@@ -1,12 +1,16 @@
 #include "main.h"
 /**
- * function - blah blah
+ * _islower - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int function(void)
+int _islower(int c)
 {
+bool ans = (c >= 'a' && c <= 'z');
 
+if (ans)
+return (1);
+else
 return (0);
 }
