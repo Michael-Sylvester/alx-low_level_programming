@@ -5,7 +5,7 @@
  *
  * Return: nothing
  */
-int main(void)
+int print_alphabet(void)
 {
 int num = 'a';
 while (num <= 'z')
