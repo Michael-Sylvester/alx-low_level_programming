@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet - blah blah
+ * main - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int print_alphabet(void)
+int (void)
 {
 int num = 'a';
 while (num <= 'z')
