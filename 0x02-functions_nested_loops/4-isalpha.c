@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * _isalpha - blah blah
+ * @c : parameters
  *
  * Return: nothing
  */
-int function(void)
+int _isalpha(void)
 {
-
-return (0);
+int ans = (c >= 'A' && c <= 'Z');
+return (ans);
 }
