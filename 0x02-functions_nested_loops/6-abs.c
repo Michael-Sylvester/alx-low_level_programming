@@ -1,12 +1,14 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * _abs - blah blah
+ * @n : parameters
  *
  * Return: nothing
  */
-int function(void)
+int _abs(int n)
 {
-
-return (0);
+if (n < 0)
+return (n * -1);
+else
+return (n);
 }
