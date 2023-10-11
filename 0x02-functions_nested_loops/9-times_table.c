@@ -21,7 +21,7 @@ _putchar(',');
 _putchar(' ');
 }
 if (product < 10)
-_putchar(' ');
+  /*_putchar(' ');*/
 else
 _putchar((product / 10) + '0');
 
