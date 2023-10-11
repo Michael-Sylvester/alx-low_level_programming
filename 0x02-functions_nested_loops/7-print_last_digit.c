@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * print_last_digit - blah blah
+ * @n : parameters
  *
  * Return: nothing
  */
-int function(void)
+int print_last_digit(void)
 {
 
-return (0);
+return (n % 10);
 }
