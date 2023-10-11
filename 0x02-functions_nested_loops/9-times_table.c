@@ -20,7 +20,7 @@ if (column > 0)
 _putchar(',');
 _putchar(' ');
 
-if (prduct < 10)
+if (product < 10)
 _putchar(' ');
 }
 
