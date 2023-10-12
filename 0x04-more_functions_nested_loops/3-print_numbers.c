@@ -1,12 +1,19 @@
 #include "main.h"
 /**
- * function - blah blah
+ * print_numbers - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int function(void)
+void print_numbers(void)
 {
+char num = '0';
 
-return (0);
+
+while (num <= '9')
+{
+_putchar(num);
+num++;
+}
+
 }
