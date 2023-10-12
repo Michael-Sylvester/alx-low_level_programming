@@ -1,12 +1,22 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * print_square - blah blah
+ * @size : parameters
  *
  * Return: nothing
  */
-int function(void)
+void print_square(int size)
 {
-
-return (0);
+int l = 0
+while (l < size)
+{
+int b = 0
+while (b < size)
+{
+_putchar('#');
+b++;
+}
+l++;
+_putchar('\n');
+}
 }
