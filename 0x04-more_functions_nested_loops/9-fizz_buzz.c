@@ -24,6 +24,6 @@ printf("%d ", num);
 }
 putchar('\n');
 
-printf("%d ", num);
+
 return (0);
 }
