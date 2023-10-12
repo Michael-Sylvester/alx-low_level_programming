@@ -1,12 +1,23 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * _isdigit - blah blah
+ * @c : parameters
  *
  * Return: nothing
  */
-int function(void)
+int _isdigit(int c)
 {
+char alpha = '0';
+int ans = 0;
 
-return (0);
+while (alpha <= '9')
+{
+if (alpha == c)
+{
+ans = 1;
+break;
+}
+alpha++;
+}
+return (ans);
 }
