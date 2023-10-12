@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - blah blah
- * no parameters
+ * @n : parameters
  *
  * Return: nothing
  */
