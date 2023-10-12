@@ -1,12 +1,23 @@
 #include "main.h"
 /**
- * function - blah blah
+ * print_line - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int function(void)
+void print_line(int n)
 {
 
-return (0);
+if (n > 0)
+{
+int x = 0;
+while (x < n)
+{
+_putchar('_');
+x++;
+}
+}
+
+_putchar('\n');
+
 }
