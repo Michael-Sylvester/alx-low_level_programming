@@ -1,12 +1,23 @@
 #include "main.h"
 /**
- * function - blah blah
+ * print_most_numbers - blah blah
  * no parameters
  *
  * Return: nothing
  */
-int function(void)
+void print_most_numbers(void)
 {
+char num = '0';
 
-return (0);
+
+while (num <= '9')
+{
+if (num != '2' && num != '4')
+{
+_putchar(num);
+}
+num++;
+}
+_putchar('\n');
+
 }
