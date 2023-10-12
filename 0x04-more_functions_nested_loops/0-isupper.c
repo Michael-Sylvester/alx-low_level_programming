@@ -1,12 +1,23 @@
 #include "main.h"
 /**
- * function - blah blah
- * no parameters
+ * _isupper - blah blah
+ * @c : no parameters
  *
  * Return: nothing
  */
-int function(void)
+int _isupper(int c)
 {
+char alpha = 'A';
+int ans = 0;
 
-return (0);
+while (alpha <= 'Z')
+{
+if (alpha == c)
+{
+ans = 1;
+break;
+}
+alpha++;
+}
+return (ans);
 }
