@@ -11,7 +11,8 @@ int x = 0;
 int y = 0;
 while (x < 10)
 {
-while (y < 14)
+y = 0;
+while (y <= 14)
 {
 if (y > 9)
 {
