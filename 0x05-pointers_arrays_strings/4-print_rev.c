@@ -1,12 +1,24 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
+ * print_rev - blah blah
+ * @s : parameters
  *
  * Return: nothing
  */
-void 
+void print_rev(char *s)
 {
 
-return (0);
+char temp = *s;
+while (*s != '\0')
+{
+s++;
+}
+
+while (*s != temp)
+{
+_putchar(*s);
+s--;
+}
+_putchar(temp);
+_putchar('\n');
 }
