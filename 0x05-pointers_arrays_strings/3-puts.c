@@ -1,12 +1,16 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
+ * _puts - blah blah
+ *@str parameters
  *
  * Return: nothing
  */
-void 
+void _puts(char *str)
 {
+while (*str != '\0')
+{
+_putchar(*str);
+str++;
+}
 
-return (0);
 }
