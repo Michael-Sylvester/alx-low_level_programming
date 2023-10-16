@@ -13,8 +13,10 @@ int half = 0;
 int again = 0;
 while (*str != '\0')
 {
+
 count++;
 str++;
+_putchar(count);
 }
 
 while (*str != temp)
