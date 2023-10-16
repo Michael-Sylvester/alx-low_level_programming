@@ -16,7 +16,7 @@ while (*str != '\0')
 
 count++;
 str++;
-_putchar(count);
+_putchar(count + '0');
 }
 
 while (*str != temp)
