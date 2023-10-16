@@ -35,7 +35,7 @@ printf("half : %d\n", half);
 
 while (again != count && *str != '\0')
 {
-if (again > half)
+if (again >= half)
 _putchar(*str);
 
 str++;
