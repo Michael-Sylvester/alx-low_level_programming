@@ -34,5 +34,5 @@ s++;
 count++;
 }
 
-_putchar('\n');
+
 }
