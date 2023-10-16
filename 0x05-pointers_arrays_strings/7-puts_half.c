@@ -19,6 +19,7 @@ str++;
 
 while (*str != temp)
 {
+count--;
 str--;
 }
 if (count % 2 == 0)
