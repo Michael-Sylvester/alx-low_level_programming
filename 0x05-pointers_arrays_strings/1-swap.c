@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
- *
+ * swap_int - blah blah
+ * @a : parameters
+ * @b : yo
  * Return: nothing
  */
-void 
+void swap_int(int *a, int *b)
 {
-
-return (0);
+int *temp = b;
+b = a;
+a = temp;
 }
