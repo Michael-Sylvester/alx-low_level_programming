@@ -13,7 +13,7 @@ while (*s != '\0')
 {
 s++;
 }
-
+s--;
 while (*s != temp)
 {
 _putchar(*s);
