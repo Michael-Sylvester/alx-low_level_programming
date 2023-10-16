@@ -16,10 +16,9 @@ while (*str != '\0')
 count++;
 str++;
 }
-
+count--;
 while (*str != temp)
 {
-count--;
 str--;
 }
 if (count % 2 == 0)
