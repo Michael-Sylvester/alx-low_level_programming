@@ -1,12 +1,17 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
+ * _strlen - blah blah
+ * @s : parameters
  *
  * Return: nothing
  */
-void 
+int _strlen(char *s)
 {
-
-return (0);
+int length = 0;
+while (*s != '\0')
+{
+length++;
+s++;
+}
+return (length);
 }
