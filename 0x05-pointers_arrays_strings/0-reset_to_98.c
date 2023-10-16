@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
+ *reset_to_98  - blah blah
+ * @n : parameters
  *
  * Return: nothing
  */
-void 
+void reset_to_98(int *n)
 {
+*n = 98;
 
-return (0);
 }
