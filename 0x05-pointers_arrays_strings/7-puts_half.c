@@ -17,8 +17,8 @@ while (*str != '\0')
 
 count++;
 str++;
- printf("%d", count);
 }
+printf("length : %d\n", count);
 
 while (*str != temp)
 {
@@ -26,7 +26,7 @@ str--;
 }
 
 half = count / 2;
-
+printf("half : %d\n", half); 
 
 
 while (again != count && *str != '\0')
