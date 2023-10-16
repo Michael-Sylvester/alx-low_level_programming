@@ -18,7 +18,6 @@ while (*str != '\0')
 count++;
 str++;
 }
-printf("length : %d\n", count);
 
 while (*str != temp)
 {
@@ -29,8 +28,6 @@ half = count / 2;
 
 if (count % 2 == 1)
 half++;
-
-printf("half : %d\n", half); 
 
 
 while (again != count && *str != '\0')
