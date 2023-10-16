@@ -17,7 +17,7 @@ while (*str != '\0')
 
 count++;
 str++;
-printf(count);
+ printf("%d", count);
 }
 
 while (*str != temp)
