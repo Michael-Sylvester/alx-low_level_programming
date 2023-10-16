@@ -1,12 +1,23 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
+ * puts2 - blah blah
+ * @str : parameters
  *
  * Return: nothing
  */
-void 
+void puts2(char *str)
 {
+int temp = 0;
+while (*str != '\0')
+{
+if (temp % 2 == 0)
+_putchar(*str);
 
-return (0);
+str++;
+temp++;
+}
+
+
+_putchar('\n');
+
 }
