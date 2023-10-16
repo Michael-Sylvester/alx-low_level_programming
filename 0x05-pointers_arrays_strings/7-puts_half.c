@@ -26,6 +26,10 @@ str--;
 }
 
 half = count / 2;
+
+if (count % 2 == 1)
+half++;
+
 printf("half : %d\n", half); 
 
 
