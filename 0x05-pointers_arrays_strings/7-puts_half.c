@@ -8,7 +8,7 @@
 void puts_half(char *str)
 {
 char temp = *str;
-int count = 0;
+int count = 1;
 int half = 0;
 int again = 0;
 while (*str != '\0')
@@ -16,7 +16,7 @@ while (*str != '\0')
 
 count++;
 str++;
-_putchar(count + '0');
+printf(count);
 }
 
 while (*str != temp)
