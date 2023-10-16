@@ -16,7 +16,7 @@ while (*str != '\0')
 count++;
 str++;
 }
-count--;
+
 while (*str != temp)
 {
 str--;
@@ -26,9 +26,9 @@ half = count / 2;
 else
 half = (count - 1) / 2;
 
-while (again != count)
+while (again != count && *str != '\0')
 {
-if (again >= half)
+if (again > half)
 _putchar(*str);
 
 str++;
