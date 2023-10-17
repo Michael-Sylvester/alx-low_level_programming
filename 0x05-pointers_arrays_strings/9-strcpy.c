@@ -1,12 +1,24 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
- *
+ * _strcpy - blah blah
+ * @dest : parameters
+ * @src : yoyo
  * Return: nothing
  */
-void 
+char *_strcpy(char *dest, char *src)
 {
+char *dest_start = dest;
 
-return (0);
+
+while (*src != '\0')
+{
+*dest = *src;
+dest++;
+src++;
+}
+
+
+*dest = '\0';
+
+return (dest_start);
 }
