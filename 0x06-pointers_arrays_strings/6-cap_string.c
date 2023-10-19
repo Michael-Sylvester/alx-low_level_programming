@@ -27,6 +27,7 @@ return (0);
  */
 char *cap_string(char *str)
 {
+char *first = str;
 int cap_next = 1;
 
 while (*str != '\0')
@@ -46,6 +47,6 @@ cap_next = 0;
 str++;
 }
 
-return (str);
+return (first);
 
 }
