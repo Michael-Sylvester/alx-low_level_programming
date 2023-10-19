@@ -2,8 +2,8 @@
 /**
  * strncat - blah blah
  * @dest : parameters
- * @str : 2nd string
- * @n : 
+ * @src : 2nd string
+ * @n : no of members to catinate 
  * Return: nothing
  */
 char *_strncat(char *dest, char *src, int n)
