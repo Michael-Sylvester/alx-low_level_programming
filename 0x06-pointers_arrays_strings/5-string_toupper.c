@@ -8,14 +8,14 @@
 char *string_toupper(char *str)
 {
 int x = 0;
-char first  = str;
+char *first  = str;
 char lower[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 while (*str != '\0')
 {
 x = 0;
-while(x < 26)
+while (x < 26)
 {
 if (*str == lower[x])
 {
