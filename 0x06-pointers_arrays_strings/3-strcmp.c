@@ -17,9 +17,9 @@ s2++;
 if (*s1 == '\0' && *s2 == '\0')
 return (0);
 else if (*s1 == '\0')
-return (-1);
+return (-15);
 else
-return (1);
+return (15);
 
 
 }
