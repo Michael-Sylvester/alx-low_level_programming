@@ -1,5 +1,25 @@
 #include "main.h"
 /**
+ * is_separator - check if its a text separator
+ * @c : parameters
+ *
+ * Return: nothing
+ */
+int is_separator(char c)
+{
+char separators[] = " \t\n,;.!?\"(){}";
+int i;
+for (i = 0; separators[i] != '\0'; i++)
+{
+if (c == separators[i])
+{
+return (1);
+}
+}
+return (0);
+}
+
+/**
  * cap_string - convert entire string to uppercase
  * @str : parameters
  *
@@ -7,35 +27,25 @@
  */
 char *cap_string(char *str)
 {
-int x = 0;
-int cap = 0;
-char *first  = str;
-char lower[] = "abcdefghijklmnopqrstuvwxyz";
-char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int cap_next = 1;
 
 while (*str != '\0')
 {
-x = 0;
-while (x < 26)
+if (is_separator(*str))
 {
-
-if (*str == lower[x] && cap == 1)
+cap_next = 1;
+}
+else if (cap_next)
 {
-*str = upper[x];
-cap = 0;
-break;
+if (*str >= 'a' && *str <= 'z')
+{
+*str -= 32;
 }
-x++;
+cap_next = 0;
 }
-
-if (*str == ',' || *str == ';' || *str == '.' || *str == '!' || *str == '?')
-cap = 1;
-
-if (*str == '"' || *str == '(' || *str == ')' || *str == '{' || *str == '}')
-cap = 1;
-
 str++;
 }
-return (first);
+
+return (str);
 
 }
