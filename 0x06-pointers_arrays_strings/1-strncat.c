@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * strncat - blah blah
+ * _strncat - blah blah
  * @dest : parameters
  * @src : 2nd string
- * @n : no of members to catinate 
+ * @n : no of members to catinate
  * Return: nothing
  */
 char *_strncat(char *dest, char *src, int n)
