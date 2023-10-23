@@ -1,12 +1,35 @@
 #include "main.h"
 /**
- *  - blah blah
- * no parameters
- *
- * Return: nothing
+ * _strspn - caculates the length of the first n
+ * consecurtive characters in s that can be found in accept
+ * @s : pointer the string being searched
+ * @accept : pointer to the array ofcharacter to be compared with
+ * Return: size of consecurtive characters in s that can be found in accept
  */
-void 
+unsigned int _strspn(char *s, char *accept)
 {
+unsigned int size;
+int cont;
+char *first = accept;
+while (*s != '\0')
+{
+cont = 0;
+while (*accept != '\0')
+{
+if (*s == *accept)
+{
+size++;
+cont = 1;
+break;
+}
+accept++;
+}
+if (cont == 0)
+return (size);
 
-return ;
+s++;
+accept = first;
+}
+
+return (size);
 }
