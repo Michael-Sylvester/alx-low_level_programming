@@ -5,7 +5,7 @@
  *
  * Return: nothing
  */
-int function(void)
+void
 {
 
 return;
