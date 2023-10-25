@@ -29,4 +29,6 @@ if (n % x == 0)
 return (-1);
 else if (n % x != 0 && x > 1)
 return (recursion(n, x - 1));
+else
+return (1);
 }
