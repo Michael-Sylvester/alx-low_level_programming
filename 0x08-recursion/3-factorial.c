@@ -1,12 +1,19 @@
 #include "main.h"
 /**
- *  -
- * no parameters
+ * factorial -  a function that returns the factorial of a given number.
+ * @n : number whose factorial we want
  *
  * Return: nothing
  */
-void
+int factorial(int n)
 {
+int fact = n;
+if (n < 0)
+return (-1);
+else if (n == 0)
+return (1);
+else
+fact *=  factorial(n - 1);
 
-return;
+return (fact);
 }
