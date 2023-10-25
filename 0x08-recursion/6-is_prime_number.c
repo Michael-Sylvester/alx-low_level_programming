@@ -11,7 +11,7 @@ int recursion(int n, int x);
 int is_prime_number(int n)
 {
 if (n < 2)
-return (-1);
+return (0);
 
 return (recursion(n, n / 2));
 }
@@ -26,8 +26,8 @@ return (recursion(n, n / 2));
 int recursion(int n, int x)
 {
 if (n % x == 0)
-return (-1);
-else if (n % x != 0 && x > 1)
+return (0);
+else if (n % x != 0 && x > 2)
 return (recursion(n, x - 1));
 else
 return (1);
