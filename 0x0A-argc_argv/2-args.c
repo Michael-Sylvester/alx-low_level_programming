@@ -14,7 +14,6 @@ for (x = 0; x < argc; x++)
 printf("%s\n", argv[x]);
 }
 
-putchar('\n');
 
 return (0);
 }
