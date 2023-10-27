@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - a program that multiplies two numbers.
  * @argc : the number of arguments
@@ -15,8 +16,8 @@ printf("Error\n");
 return (1);
 }
 
-sum = argv[1] * argv[2];
-printf("%d\n", sum)
+sum = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", sum);
 
 return (0);
 }
