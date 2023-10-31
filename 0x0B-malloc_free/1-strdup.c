@@ -33,9 +33,11 @@ char *_strdup(char *str)
 char *newstr;
 int x = 0;
 int size;
+if (str == NULL)
+return (NULL);
 
 size = sizeup(str);
-newstr = malloc(sizeof(char) * size);
+newstr = malloc(sizeof(char) * size + 1);
 
 while (*str != '\0' && newstr != NULL)
 {
