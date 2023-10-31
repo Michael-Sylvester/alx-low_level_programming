@@ -24,14 +24,14 @@ concat = malloc(sizeof(s1) + sizeof(s2));
 if (concat == NULL)
 return (NULL);
 
-while (*s1 != '\0')
+while (*s1 != '\0' && s1 != NULL)
 {
 concat[x] = *s1;
 s1++;
 x++;
 }
 
-while (*s2 != '\0')
+while (*s2 != '\0' && s2 != NULL)
 {
 concat[x] = *s2;
 s2++;
