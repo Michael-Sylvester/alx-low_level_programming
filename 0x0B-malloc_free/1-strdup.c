@@ -1,12 +1,48 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * -
- * @ :
+ * sizeup -calculates the size of a string using a pointer
+ * @s : pointer to the string
  *
- * Return: pointer to
+ * Return: int x ; string size
  */
-char
+int sizeup(char *s)
 {
+int x = 0;
 
-return;
+if (*s != '\0')
+{
+x = 1;
+x += sizeup(s + 1);
+}
+
+return (x);
+}
+
+/**
+ * _strdup - a function that returns a pointer to
+ * a newly allocated space in memory, which contains
+ * a copy of the string given as a parameter.
+ * @str : pointer to string to be copied
+ *
+ * Return: pointer tocopied string
+ */
+char *_strdup(char *str)
+{
+char *newstr;
+int x = 0;
+int size;
+
+size = sizeup(str);
+newstr = malloc(sizeof(char) * size);
+
+while (*str != '\0' && newstr != NULL)
+{
+newstr[x] = *str;
+str++;
+x++;
+}
+
+return (newstr);
 }
