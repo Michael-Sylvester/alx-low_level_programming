@@ -14,7 +14,11 @@ char *concat;
 
 if (s1 == NULL && s2 == NULL)
 return (NULL);
-
+else if (s1 == NULL)
+concat = malloc(sizeof(s2));
+else if (s2 == NULL)
+concat = malloc(sizeof(s1));
+else
 concat = malloc(sizeof(s1) + sizeof(s2));
 
 if (concat == NULL)
