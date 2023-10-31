@@ -22,6 +22,8 @@ array = malloc(sizeof(int) * height);
 for (x = 0; x < height; x++)
 {
 array[x] = malloc(sizeof(int) * width);
+if (array[x] == NULL)
+return (NULL);
 }
 
 for (x = 0; x < height; x++)
