@@ -13,6 +13,9 @@ int x;
 int y;
 int i = 0;
 
+if (ac == 0 || av == NULL)
+return NULL;
+ 
 str = malloc(sizeof(av[x]) * ac);
 
 for (x = 0; x < ac; x++)
