@@ -19,7 +19,7 @@ ans = malloc(nmemb * size);
 if (ans == NULL)
 return (NULL);
 
-bytes = ans
+bytes = ans;
 for (x = 0; x < nmemb * size; x++)
 {
 bytes[x] = 0;
