@@ -19,7 +19,7 @@ array = malloc(sizeof(int) * (max - min));
 if (array == NULL)
 return (NULL);
 
-while (count =< max)
+while (count <= max)
 {
 array[x] = count;
 count++;
