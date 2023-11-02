@@ -23,5 +23,5 @@ for (x = 0; x < nmemb; x++)
 ans[x] = 0;
 }
 
- return (ans);
+return (ans);
 }
