@@ -19,7 +19,7 @@ while IFS= read -r line; do
     # Create a new file with the corresponding name
         filename="${line}"
 	echo "#include \"main.h\"" > "$filename"
-	echo "#include <stdlib.h>" > "$filename"
+	echo "#include <stdlib.h>" >> "$filename"
 	echo "/**" >> "$filename"
 	echo " *  - " >> "$filename"
 	echo " * @" >> "$filename"
