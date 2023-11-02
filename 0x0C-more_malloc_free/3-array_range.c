@@ -13,9 +13,9 @@ int x = 0;
 int count = min;
 
 if (min > max)
-return(NULL);
+return (NULL);
 
-array = malloc(sizeof(int) * (max - min));
+array = malloc(sizeof(int) * (max + 1 - min));
 if (array == NULL)
 return (NULL);
 
