@@ -8,8 +8,8 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *ans;
-
+int *ans;
+int x;
 if (nmemb == 0 || size == 0)
 return (NULL);
 
@@ -18,5 +18,10 @@ ans = malloc(nmemb * size);
 if (ans == NULL)
 return (NULL);
 
-return (ans);
+for (x = 0; x < nmemb; x++)
+{
+ans[x] = 0;
+}
+
+ return (ans);
 }
