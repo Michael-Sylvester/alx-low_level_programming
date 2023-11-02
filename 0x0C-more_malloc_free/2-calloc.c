@@ -20,7 +20,7 @@ return (NULL);
 
 for (x = 0; x < nmemb; x++)
 {
-((char *)ans)[x * size] = 0;
+((char *)ans)[x] = 0;
 }
 
 return (ans);
