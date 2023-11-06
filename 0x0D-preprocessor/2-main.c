@@ -1,5 +1,5 @@
 #include "main.h"
-x
+
 /**
 * main - program will print out its file name
 * Return : 0
