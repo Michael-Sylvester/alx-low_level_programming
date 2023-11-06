@@ -10,10 +10,11 @@ int check(char *word);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+dog_t *ndog;
+
 if (!check(name) && !check(owner))
 return (NULL);
 
-dog_t *ndog;
 ndog = malloc(sizeof(struct dog));
 if (ndog == NULL)
 return (NULL);
