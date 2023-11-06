@@ -1,6 +1,16 @@
-#ifndef
-#define
 
+/**
+ * main - program will print out its file name
+ * Return : 0
+ */
+int main(void)
+{
+  char *name = __FILE__;
 
-
-#endif
+    while (*name != '\0')
+      {
+       _putchar(*name);
+       name++;
+      }
+    return (0);
+}
