@@ -1,16 +1,16 @@
 
 /**
- * main - program will print out its file name
- * Return : 0
- */
+* main - program will print out its file name
+* Return : 0
+*/
 int main(void)
 {
-  char *name = __FILE__;
+char *name = __FILE__;
 
-    while (*name != '\0')
-      {
-       _putchar(*name);
-       name++;
-      }
-    return (0);
+while (*name != '\0')
+{
+_putchar(*name);
+name++;
+}
+return (0);
 }
