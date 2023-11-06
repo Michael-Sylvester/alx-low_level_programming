@@ -3,9 +3,9 @@
 
 /**
 * struct dog - struct ofr a dog
-* @a: first member
-* @b: 2nd member
-* @c:3rd member
+* @name: first member
+* @age: 2nd member
+* @owner: 3rd member
 */
 struct dog
 {
