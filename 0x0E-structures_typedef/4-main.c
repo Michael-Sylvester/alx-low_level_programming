@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -10,7 +11,7 @@ int main(void)
 {
   dog_t *my_dog;
 
-  my_dog = new_dog("Poppy Man", 55, "Bobby");
+  my_dog = new_dog("Poppy Man", 55, NULL);
   printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
   return (0);
 }
