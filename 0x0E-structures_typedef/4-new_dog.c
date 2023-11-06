@@ -19,6 +19,11 @@ ndog = malloc(sizeof(struct dog));
 if (ndog == NULL)
 return (NULL);
 
+ndog->name = malloc(sizeof(name));
+ndog->owner = malloc(sizeof(owner));
+if (!check(ndog->name) && !check(ndog->owner))
+return (NULL);
+
 ndog->name = name;
 ndog->age = age;
 ndog->owner = owner;
