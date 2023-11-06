@@ -12,18 +12,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *ndog;
 
-if (!check(name) || !check(owner))
-return (NULL);
-
-ndog = malloc(sizeof(struct dog));
+ndog = malloc(sizeof(dog_t));
 if (ndog == NULL)
 return (NULL);
 
 ndog->name = malloc(sizeof(name));
 ndog->owner = malloc(sizeof(owner));
 if (!check(ndog->name) || !check(ndog->owner))
+{
+free(ndog);
 return (NULL);
-
+}
 ndog->name = name;
 ndog->age = age;
 ndog->owner = owner;
