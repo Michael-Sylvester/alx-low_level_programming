@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 #include "dog.h"
 
 /**
@@ -12,7 +13,7 @@ int main(void)
 
   my_dog.name = "Poppy";
   my_dog.age = 3.5;
-  my_dog.owner = "Bob";
+  my_dog.owner = NULL;
   print_dog(&my_dog);
   return (0);
 }

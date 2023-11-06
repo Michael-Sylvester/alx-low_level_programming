@@ -10,6 +10,8 @@ char *check(char *word);
 */
 void print_dog(struct dog *d)
 {
+if (d == NULL)
+return;
 
 printf("Name: %s\n", check(d->name));
 
@@ -29,5 +31,5 @@ char *check(char *word)
 if (word != NULL)
 return (word);
 else
-return ("nil");
+return ("(nil)");
 }
