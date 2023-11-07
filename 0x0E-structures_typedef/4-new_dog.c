@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 int check(char *word);
 /**
 * new_dog - function creates a new dog with typdef dog_t
@@ -16,16 +17,14 @@ ndog = malloc(sizeof(dog_t));
 if (ndog == NULL)
 return (NULL);
 
-ndog->name = malloc(sizeof(name));
-ndog->owner = malloc(sizeof(owner));
-if (!check(ndog->name) || !check(ndog->owner))
+ndog->name = strdup(name);
+ndog->owner = strdup(owner);
+if (ndog->name == NULL || ndog->owner == NULL)
 {
 free(ndog);
 return (NULL);
 }
-ndog->name = name;
 ndog->age = age;
-ndog->owner = owner;
 
 return (ndog);
 }
