@@ -28,14 +28,3 @@ ndog->age = age;
 
 return (ndog);
 }
-/** check - check  for null pointer
-* @word: pointer to string
-* Return: 1 or 0
-*/
-int check(char *word)
-{
-if (word == NULL)
-return (0);
-else
-return (1);
-}
