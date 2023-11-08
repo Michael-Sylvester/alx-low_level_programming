@@ -1,6 +1,6 @@
-#include <stddef.h>
 #ifndef FUNC_POINTERS
 #define FUNC_POINTERS
+#include <stddef.h>
 
 void print_name(char *name, void (*f)(char *));
 int _putchar(char c);
