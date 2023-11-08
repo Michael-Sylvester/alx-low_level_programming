@@ -1,0 +1,26 @@
+#!/bin/bash
+i=1
+while [ $i -le 5 ]; do
+    
+        filename="3-op_functions.c"
+
+	echo "" >> "$filename"
+	echo "/**" >> "$filename"
+	echo " *" >> "$filename"
+	echo " * @a: 1st number" >> "$filename"
+	echo " * @b: 2nd number" >> "$filename"
+	echo " * Return: nothing" >> "$filename"
+	echo " */" >> "$filename"
+
+	echo "int F(int a, int b)" >> "$filename"
+	echo "{" >> "$filename"
+	echo "" >> "$filename"
+	echo "return;" >> "$filename"
+	echo "}" >> "$filename"
+#	chmod 744 "$filename"
+
+	echo "Created $i functions"
+       ((i++))
+    done 
+
+echo "All functions created successfully."
