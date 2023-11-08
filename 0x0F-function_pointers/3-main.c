@@ -17,8 +17,8 @@ char *operator = argv[2];
 if (argc != 4)
 {
 puts("Error");
- printf("argc = %i\n", argc);
- exit(98);
+printf("argc = %i\n", argc);
+exit(98);
 }
 
 if ((*operator == '/' || *operator == '%') && b == 0)

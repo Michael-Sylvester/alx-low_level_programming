@@ -4,11 +4,10 @@
 /**
 * get_op_func - sellect the apropriate operation
 * @s:  string representing function
-* @a: 1st number
-* @b: 2nd number
+*
 * Return: nothing
 */
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 int i = 0;
 op_t ops[] = {
@@ -23,7 +22,7 @@ op_t ops[] = {
 while (ops[i].op != NULL)
 {
 if (strcmp(s, ops[i].op) == 0)
-return ops[i].f;
+return (ops[i].f);
 
 i++;
 }
