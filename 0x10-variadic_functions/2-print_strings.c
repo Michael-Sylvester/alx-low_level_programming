@@ -19,7 +19,7 @@ for (count = 0; count < n; count++)
 {
 next = va_arg(args, char *);
 if (next = NULL)
-next = "(nil)";
+*next = "(nil)";
 
 printf("%s", next);
 
