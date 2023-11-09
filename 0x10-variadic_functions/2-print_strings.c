@@ -18,6 +18,9 @@ va_start(args, n);
 for (count = 0; count < n; count++)
 {
 next = va_arg(args, char *);
+if (next = NULL)
+next = "(nil)";
+
 printf("%s", next);
 
 if (separator != NULL && count < n - 1)
