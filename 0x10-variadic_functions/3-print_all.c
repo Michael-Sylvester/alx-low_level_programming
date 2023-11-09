@@ -54,4 +54,5 @@ x++;
 }
 
 printf("\n");
+va_end(words);
 }
