@@ -16,6 +16,9 @@ int x;
 char *string;
 va_list words;
 
+while (format == NULL)
+return;
+
 va_start(words, format);
 
 x = 0;
