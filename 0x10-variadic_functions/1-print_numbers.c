@@ -21,7 +21,7 @@ next = va_arg(args, int);
 printf("%i", next);
 
 if (separator != NULL && count < n - 1)
-printf("%s ", separator);
+printf("%s", separator);
 
 }
 
