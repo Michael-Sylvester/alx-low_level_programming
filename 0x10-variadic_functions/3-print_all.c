@@ -13,9 +13,8 @@ void print_all(const char * const format, ...)
 {
 int write = 0;
 int x;
+char *string;
 va_list words;
-if (format == NULL)
-return;
 
 va_start(words, format);
 
@@ -37,7 +36,11 @@ printf("%f", (float)va_arg(words, double));
 write = 1;
 break;
 case 's':
-printf("%s", va_arg(words, char *));
+string = va_arg(words, char *);
+if (string == NULL)
+string = "(nil)";
+
+printf("%s", string);
 write = 1;
 break;
 default:
