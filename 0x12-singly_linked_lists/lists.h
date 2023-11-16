@@ -1,8 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <string.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 typedef struct list_s
 {
 	char *str;
