@@ -14,9 +14,9 @@ void free_list(list_t *head)
 	{
 		temp = head;
 
-		while (next != NULL)
+		while (temp != NULL)
 		{
-			memcpy(next, temp->next, sizeof(list_t));
+			next = temp->next;
 
 			free(temp->str);
 			free(temp);
