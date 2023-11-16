@@ -1,12 +1,27 @@
 #include "lists.h"
 /**
- *
- * @h : pointer to first member of list
+ *free_list- -free all nodes in the list
+ * @head : pointer to first member of list
  * @
  * Return: nothing
  */
-size_t
+void free_list(list_t *head)
 {
+	list_t *next = NULL;
+	list_t *temp;
 
-return;
+	if (head != NULL)
+	{
+		temp = head;
+
+		while (next != NULL)
+		{
+			memcpy(next, temp->next, sizeof(list_t));
+
+			free(temp->str);
+			free(temp);
+
+			temp = next;
+		}
+	}
 }
