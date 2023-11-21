@@ -12,9 +12,9 @@ size_t listint_len(const listint_t *h)
 
 	if (h == NULL)
 		return (0);
-	p = malloc(sizeof(listint_t));
 	p = (listint_t *)h;
 
+	count = 0;
 	while (p != NULL)
 	{
 		count++;
