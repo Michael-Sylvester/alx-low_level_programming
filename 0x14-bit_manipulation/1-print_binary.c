@@ -11,7 +11,6 @@ void print_binary(unsigned long int n)
 	unsigned long int pos = 1UL << size;
 	int start = 0;
 
-	printf("size = %d and pos = %lu\n", size, pos);
 	while (size >= 0)
 	{
 		if ((n & pos) != 0)
@@ -26,8 +25,6 @@ void print_binary(unsigned long int n)
 	}
 
 	if (!start)
-	{
-		printf("size = %d and pos = %lu\n", size, pos);
 		_putchar('0');
-	}
+
 }
