@@ -10,11 +10,12 @@ unsigned int update_pos(int pos)
 {
 	int count = 0;
 	unsigned int ans = 1;
+
 	while (count < pos)
-		{
-		 ans *= 2;
-		 count++;
-		}
+	{
+		ans *= 2;
+		count++;
+	}
 	return (ans);
 }
 
@@ -22,17 +23,17 @@ unsigned int update_pos(int pos)
  * binary_to_uint - converts binary string to unsigned int
  * @b: the binary number string
  * @
- * Return: the converted int or 0 if bad 
+ * Return: the converted int or 0 if bad
  */
 unsigned int binary_to_uint(const char *b)
 {
 	int pos = 0;
 	unsigned int sum = 0;
 	int count = 0;
-	
-	if(b == NULL || *b == '\0')
+
+	if (b == NULL || *b == '\0')
 		return (0);
-	
+
 	while (*b != '\0')
 	{
 		if (*b == '1' || *b == '0')
@@ -42,17 +43,17 @@ unsigned int binary_to_uint(const char *b)
 		}
 			else
 				return (0);
-			
+
 	}
 	b--;
 
-	while (count > 0 )
-		{
-			sum += update_pos(pos) * (*b -'0');
-			b--;
-			pos++;
-			count--;
-		}
+	while (count > 0)
+	{
+		sum += update_pos(pos) * (*b - '0');
+		b--;
+		pos++;
+		count--;
+	}
 
 	return (sum);
 }
