@@ -2,10 +2,17 @@
 /**
  *  get_endianness - finds the endianess
  *
- * 
+ *
  * Return: 0
  */
-int get_endianness(void);
+int get_endianness(void)
 {
-	return (0);
+	int n = 0;
+	return (n);
+}
+int main(void)
+{
+	int n = get_endianness();
+	n++;
+	return(0);
 }
