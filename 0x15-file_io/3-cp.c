@@ -82,7 +82,6 @@ char *read_file(const char *filename)
  */
 int main(int ac, char **av)
 {
-	int res;
 	char *content = NULL;
 
 	if (ac != 3)
@@ -92,6 +91,6 @@ int main(int ac, char **av)
 	}
 
 	content = read_file(av[1]);
-	res = write_file(av[2], content);
+	write_file(av[2], content);
 	return (0);
 }
