@@ -32,7 +32,7 @@ int write_file(const char *filename, char *text_content)
 	closef = close(filed);
 	if (closef == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", filed);
+		dprintf(2, "Error: Can't close fd %d/n", filed);
 		exit(100);
 	}
 	return (1);
@@ -68,7 +68,7 @@ char *read_file(const char *filename)
 	closef = close(filed);
 	if (closef == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", filed);
+		dprintf(2, "Error: Can't close fd %d\n", filed);
 		exit(100);
 	}
 	return (buff);
