@@ -93,6 +93,5 @@ int main(int ac, char **av)
 
 	content = read_file(av[1]);
 	res = write_file(av[2], content);
-	printf("-> %i)\n", res);
 	return (0);
 }
