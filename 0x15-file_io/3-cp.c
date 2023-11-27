@@ -92,5 +92,6 @@ int main(int ac, char **av)
 
 	content = read_file(av[1]);
 	write_file(av[2], content);
+	free(content);
 	return (0);
 }
