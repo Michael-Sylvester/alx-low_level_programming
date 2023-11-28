@@ -59,7 +59,7 @@ char *read_file(const char *filename)
 
 	readf = read(filed, buff, 1024);
 
-	if (readf == -1 || readf == 0)
+	if (readf == -1)
 	{
 		free(buff);
 		close(filed);
