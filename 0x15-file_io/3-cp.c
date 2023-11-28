@@ -51,10 +51,11 @@ char *read_file(const char *filename)
 	int readf;
 	int closef;
 
-	if (filename == NULL)
-		return (0);
-	if (filed == -1)
-		return (0);
+	if (filename == NULL || filed == -1)
+	{
+		dprintf(2, "Error: Can't read from file %s\n", filename);
+		exit(98);
+	}
 
 	readf = read(filed, buff, 1024);
 
