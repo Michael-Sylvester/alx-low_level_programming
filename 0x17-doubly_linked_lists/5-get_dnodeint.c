@@ -1,12 +1,27 @@
 #include "lists.h"
 /**
- *
- * @
- * @
- * Return: nothing
+ * get_dnodeint_at_index - find the node at index 
+ * @head: pointer to the head
+ * @index: index of node
+ * Return: adress of node or NULL
  */
-
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
+	dlistint_t *temp = head;
+	unsigned int count = 0;
 
-return;
+	if (head == NULL)
+		return (NULL);
+
+	count++;
+	temp = head->next;
+
+	while (count != index)
+	{
+		temp = temp->next;
+		count++;
+		if (temp == NULL)
+			return (NULL);
+	}
+	return (temp);
 }
