@@ -14,7 +14,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int size = 0;
 
 	size = list_len(*h);
-	if( size < idx)
+	if (size < idx)
 	{
 		/*printf("%d < %d", size, idx);*/
 		free(new);
@@ -57,17 +57,17 @@ dlistint_t *get_node_at_index(dlistint_t *head, unsigned int index)
 		return (NULL);
 
 	while (temp != NULL)
-		{
-			if (count == index)
-				return (temp);
-			temp = temp->next;
-			count++;
-		}
+	{
+		if (count == index)
+			return (temp);
+		temp = temp->next;
+		count++;
+	}
 	return (NULL);
 }
 
 /**
- *dlistint_len - counts number of elemnts in doubly linked list
+ *list_len - counts number of elemnts in doubly linked list
  * @h: head of list
  * @
  * Return: number of elements in list
@@ -84,10 +84,10 @@ size_t list_len(const dlistint_t *h)
 	temp = h->next;
 
 	while (temp != NULL)
-		{
-			temp = temp->next;
-			count++;
-		}
+	{
+		temp = temp->next;
+		count++;
+	}
 
 
 	return (count);
