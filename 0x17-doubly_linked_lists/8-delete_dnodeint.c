@@ -64,6 +64,12 @@ dlistint_t *get_node_at_index(dlistint_t *head, unsigned int index)
 	return (NULL);
 }
 
+/**
+ *list_len - counts number of elemnts in doubly linked list
+ * @h: head of list
+ * @
+ * Return: number of elements in list
+ */
 size_t list_len(const dlistint_t *h)
 {
 	dlistint_t *temp = (dlistint_t *)h;
