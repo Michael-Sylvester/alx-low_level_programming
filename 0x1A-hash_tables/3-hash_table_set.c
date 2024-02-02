@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
 
-	status = insertend(ht->array[index], value, key);
+	status = insert(ht->array[index], value, key);
 	return (status);
 }
 
