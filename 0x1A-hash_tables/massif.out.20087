@@ -1,0 +1,61 @@
+desc: (none)
+cmd: ./a
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=122203
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=122244
+mem_heap_B=24592
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=133038
+mem_heap_B=25616
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=136779
+mem_heap_B=25616
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n3: 25616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 24576 0x1091D4: hash_table_create (0-hash_table_create.c:18)
+  n0: 24576 0x10924E: main (0-hash_table_create.c:39)
+ n1: 1024 0x48CCD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48DCECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48DBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x48C4ABF: __vfprintf_internal (vfprintf-internal.c:1687)
+     n1: 1024 0x48ACD3E: printf (printf.c:33)
+      n0: 1024 0x10926A: main (0-hash_table_create.c:40)
+ n0: 16 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=136779
+mem_heap_B=24592
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
