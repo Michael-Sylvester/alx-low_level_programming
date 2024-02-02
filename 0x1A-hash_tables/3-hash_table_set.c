@@ -34,7 +34,7 @@ int insert(hash_node_t **head, const char *value, const char *key)
 		return (0);
 
 	temp->key = malloc(strlen(key) + 1);
-	
+
 	temp->value = malloc(strlen(value) + 1);
 	if (temp->key == NULL || temp->value == NULL)
 	{
