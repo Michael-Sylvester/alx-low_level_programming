@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
 
-	status = insert(&(ht->array[index]), value, key);
+	status = insert(ht->array[index], value, key);
 	return (status);
 }
 
@@ -26,7 +26,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  *@key: the name of the hash key
  *Return: 1 if succesfull otherwise 0
  */
-int insert(hash_node_t **head, const char *value, const char *key)
+int insert(hash_node_t *head, const char *value, const char *key)
 {
 	hash_node_t *temp = malloc(sizeof(hash_node_t));
 
@@ -36,8 +36,8 @@ int insert(hash_node_t **head, const char *value, const char *key)
 	strcpy(temp->key, (char *)key);
 	strcpy(temp->value, (char *)value);
 
-	temp->next = *head;
-	*head = temp;
+	temp->next = head;
+	head = temp;
 
 	return (1);
 }
