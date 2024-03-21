@@ -11,7 +11,7 @@ main: $(SRC)
         $(CC) -c -o $(OBJ) $(SRC)
 
 clean:
-        $(RM) *~ school
+        $(RM) *~ $(NAME)
 
 oclean:
         $(RM) $(OBJ)
