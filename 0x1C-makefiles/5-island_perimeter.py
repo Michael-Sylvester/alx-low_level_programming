@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Moudle on tracking grid islands"""
+
 def island_perimeter(grid):
     """Return the perimiter of an island.
     The grid represents water by [j][i] = 0 and land by [j][i] = 1.
