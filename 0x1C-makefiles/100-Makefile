@@ -2,10 +2,15 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-
 CFLAGS = -Wall -Werror -Wextra -pedantic
+HEADER = m.h
 
-.PHONY: all clean oclean fclean re
+.PHONY: check_header all clean oclean fclean re
+
+check_header:
+	ifeq HEADER_EXISTS
+	     $(error m.h header file is missing)                                    
+	endif
 
 all: $(NAME)
 
@@ -22,6 +27,6 @@ fclean: clean oclean
 
 re: fclean all
 
-ifeq ($(wildcard m.h),)
-	$(error m.h header file is missing)
-endif
+HEADER_EXISTS := $(shell if [ -f $(HEADER) ]; then echo 1; else echo 0; fi)
+
+clean oclean fclean re: check_header
